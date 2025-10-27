@@ -37,14 +37,15 @@ function App() {
         {/* LATIHAN 2 - GRID GALERI */}
         <h2 className="font-semibold">LATIHAN 2</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-2 justify-start">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <img
-              key={i}
-              src="https://www.placehold.co/200x200"
-              alt={Gambar Galeri ${i + 1}}
-              className="rounded bg-gray-200 w-[200px] h-[200px] lg:w-[130px] lg:h-[130px] object-contain"
-            />
-        ))}
+  {Array.from({ length: 6 }).map((_, i) => (
+    <img
+      key={i}
+      src="https://www.placehold.co/200x200"
+      alt={`Gambar Galeri ${i + 1}`}
+      className="rounded bg-gray-200 w-[200px] h-[200px] lg:w-[130px] lg:h-[130px] object-contain"
+    />
+  ))}
+
         </div>
 
         <hr className="border-gray-200" />
